@@ -143,9 +143,12 @@ section h2::after {
     margin-bottom: 1rem;     /* Espacio entre el encabezado y el texto del servicio */
 }
 .servicio-icono {
-    font-size: 2.5rem;       /* Tamaño del icono (si usas Font Awesome, es como texto) */
-    color: var(--color-acento); /* Usa el color turquesa de tu marca */
-    margin-bottom: 0.5rem;  /* Espacio entre el icono y el título */
+    font-size: 2.5rem !important; /* Si estás usando Font Awesome, esto lo reduce drásticamente */
+    width: 50px;                 /* Si descargaste un archivo SVG/imagen, esto limita su ancho */
+    height: 50px;                /* Mantiene la proporción cuadrada */
+    color: var(--color-acento);  /* Le cambia el color negro al azul turquesa de tu marca */
+    margin-bottom: 1rem;         /* Separa el icono del título para que respire */
+    display: inline-block;       /* Asegura que respete los tamaños asignados */
 }
 
 .perfil-texto h3 {
