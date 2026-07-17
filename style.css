@@ -135,6 +135,18 @@ section h2::after {
     gap: 4rem;
     align-items: center;
 }
+.servicio-encabezado {
+    display: flex;
+    flex-direction: column; /* Apila el icono sobre el título */
+    align-items: center;    /* Centra horizontalmente */
+    text-align: center;     /* Centra el texto del título */
+    margin-bottom: 1rem;     /* Espacio entre el encabezado y el texto del servicio */
+}
+.servicio-icono {
+    font-size: 2.5rem;       /* Tamaño del icono (si usas Font Awesome, es como texto) */
+    color: var(--color-acento); /* Usa el color turquesa de tu marca */
+    margin-bottom: 0.5rem;  /* Espacio entre el icono y el título */
+}
 
 .perfil-texto h3 {
     font-size: 1.5rem;
