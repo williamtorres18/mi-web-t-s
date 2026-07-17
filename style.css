@@ -143,11 +143,12 @@ section h2::after {
     margin-bottom: 1rem;     /* Espacio entre el encabezado y el texto del servicio */
 }
 .servicio-icono {
-    width: 60px !important;      /* Fuerza al archivo de imagen a encogerse a 60px */
-    height: 60px !important;     /* Mantiene el contenedor perfectamente cuadrado */
-    object-fit: contain;         /* Evita que el dibujo se deforme al achicarse */
-    margin-bottom: 1rem;         /* Separa el icono del título para que respire */
-    display: block;              /* Cambiado a block para asegurar el control total de dimensiones */
+    width: 55px !important;      /* Tamaño ideal y elegante */
+    height: 55px !important;
+    fill: var(--color-acento);   /* Esto pinta el SVG con el azul turquesa de tu marca */
+    margin-bottom: 0.5rem;
+    display: block;
+}
     margin-left: auto;           /* Centra la imagen horizontalmente */
     margin-right: auto;          /* Centra la imagen horizontalmente */
 }
@@ -268,4 +269,9 @@ footer {
     nav ul li { margin: 0 1rem; }
     .perfil-contenedor { flex-direction: column; text-align: center; }
     section { padding: 3rem 5%; }
+}
+.servicio-tarjeta img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: contain;
 }
