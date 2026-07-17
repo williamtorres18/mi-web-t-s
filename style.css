@@ -142,7 +142,6 @@ section h2::after {
     text-align: center;     /* Centra el texto del título */
     margin-bottom: 1rem;     /* Espacio entre el encabezado y el texto del servicio */
 }
-/* Estilos específicos para regular el tamaño y color del icono */
 .servicio-icono {
     width: 60px !important;      /* Fuerza al archivo de imagen a encogerse a 60px */
     height: 60px !important;     /* Mantiene el contenedor perfectamente cuadrado */
