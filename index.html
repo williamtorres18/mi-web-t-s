@@ -3,180 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Torres - Medicina Ocupacional y Cirugía General</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Título Unificado -->
+    <title>T&S Medicina Ocupacional - Salud y Seguridad Laboral en Anzoátegui</title>
+    
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/584148373572?text=Hola,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios%20de%20medicina%20ocupacional" 
+       class="btn-whatsapp-flotante" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ENCABEZADO -->
     <header>
         <div class="logo-container">
             <a href="#inicio" class="logo-link">
-                <img src="HEEZ9552.JPG" alt="T&S Medicina Ocupacional" class="logo-img">
+                <img src="LOGO_OTS.jpg" alt="T&S Medicina Ocupacional" class="logo-img">
                 <span class="logo-texto">T&S Medicina Ocupacional C.A.</span>
             </a>
         </div>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Nosotros</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
                 <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- 3.A HERO OPTIMIZADO -->
     <section id="inicio" class="hero-section">
         <div class="hero-contenido">
             <h1>Consultoría Especializada en Medicina Ocupacional</h1>
-            <p>Soluciones integrales para la gestión preventiva de tu empresa y atención médica especializada.</p>
-            <a href="#contacto" class="btn-acento">Agendar Consulta</a>
+            <p>Soluciones integrales para la gestión preventiva de tu empresa, adecuación normativa y atención médica especializada.</p>
+            <div class="hero-botones">
+                <a href="#contacto" class="btn-acento"><i class="fas fa-building"></i> Soluciones Corporativas</a>
+                <a href="#contacto" class="btn-secundario"><i class="fas fa-calendar-check"></i> Agendar Consulta</a>
+            </div>
         </div>
     </section>
 
-    <section id="sobre-mi">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos una organización con mas de 20 años de experiencia en la zona, que enfoca sus esfuerzos hacia la optimización de la gestión de Salud Ocupacional de las empresas, brindando servicios de atención médica, evaluaciones laborales y de puestos de trabajo, vigilancia epidemiológica en el área laboral, asesoría en materia de salud ocupacional, y actividades educativas, aplicados al sector público y privado, ayudando a las empresas a cumplir con las normativas legales vigentes y a proteger su capital más valioso: sus trabajadores.</p>
+    <!-- 2.C INDICADORES DE IMPACTO (SOCIAL PROOF) -->
+    <section class="cifras-impacto">
+        <div class="cifras-grid">
+            <div class="cifra-item">
+                <span class="cifra-numero">+20</span>
+                <span class="cifra-label">Años de Trayectoria Regional</span>
+            </div>
+            <div class="cifra-item">
+                <span class="cifra-numero">+100</span>
+                <span class="cifra-label">Empresas Asesoradas y Adecuadas</span>
+            </div>
+            <div class="cifra-item">
+                <span class="cifra-numero">+10,000</span>
+                <span class="cifra-label">Evaluaciones Médicas Realizadas</span>
+            </div>
+            <div class="cifra-item">
+                <span class="cifra-numero">100%</span>
+                <span class="cifra-label">Cumplimiento LOPCYMAT / INPSASEL</span>
+            </div>
+        </div>
     </section>
 
+    <!-- SOBRE NOSOTROS (EN 3 PILARES) -->
+    <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p class="seccion-subtitulo">Acompañamos a las organizaciones en el resguardo de la salud laboral y el cumplimiento legal.</p>
+        
+        <div class="pilares-grid">
+            <div class="pilar-tarjeta">
+                <i class="fas fa-map-marked-alt pilar-icono"></i>
+                <h3>Experiencia Regional</h3>
+                <p>Conocimiento profundo del entorno industrial y comercial del Estado Anzoátegui, garantizando soluciones adaptadas al sector.</p>
+            </div>
+            <div class="pilar-tarjeta">
+                <i class="fas fa-balance-scale pilar-icono"></i>
+                <h3>Cumplimiento Legal</h3>
+                <p>Asesoría rigurosa bajo la normativa vigente LOPCYMAT e INPSASEL para blindar a tu empresa ante fiscalizaciones e inspecciones.</p>
+            </div>
+            <div class="pilar-tarjeta">
+                <i class="fas fa-user-md pilar-icono"></i>
+                <h3>Salud Integral</h3>
+                <p>Atención médica ocupacional de primer nivel combinada con criterios de cirugía general para la evaluación preventiva y curativa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS CON BOTÓN DE SOLICITUD -->
     <section id="servicios">
-        <h2>Servicios Profesionales</h2>
+        <h2>Nuestros Servicios</h2>
         <div class="servicios-grid">
-            
-            <!-- Tarjeta 1: Evaluaciones Médicas -->
             <div class="servicio-tarjeta">
                 <div class="servicio-encabezado">
-                    <svg class="servicio-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path d="M64 112C64 85.5 85.5 64 112 64L160 64C177.7 64 192 78.3 192 96C192 113.7 177.7 128 160 128L128 128L128 256C128 309 171 352 224 352C277 352 320 309 320 256L320 128L288 128C270.3 128 256 113.7 256 96C256 78.3 270.3 64 288 64L336 64C362.5 64 384 85.5 384 112L384 256C384 333.4 329 398 256 412.8L256 432C256 493.9 306.1 544 368 544C429.9 544 480 493.9 480 432L480 346.5C442.7 333.3 416 297.8 416 256C416 203 459 160 512 160C565 160 608 203 608 256C608 297.8 581.3 333.4 544 346.5L544 432C544 529.2 465.2 608 368 608C270.8 608 192 529.2 192 432L192 412.8C119 398 64 333.4 64 256L64 112zM512 288C529.7 288 544 273.7 544 256C544 238.3 529.7 224 512 224C494.3 224 480 238.3 480 256C480 273.7 494.3 288 512 288z"/>
-                    </svg>
+                    <i class="fas fa-notes-medical info-icono"></i>
                     <h3>Evaluaciones Médicas Ocupacionales</h3>
                 </div>
-                <p>Evaluaciones médicas pre-empleo, pre-vacacionales, Anuales, post-empleo y especiales según las normativas vigentes.</p>
+                <p>Exámenes pre-empleo, vacacionales y de egreso adaptados a los perfiles de cargo exigidos por ley.</p>
+                <a href="#contacto" class="btn-servicio">Solicitar propuesta</a>
             </div>
 
-            <!-- Tarjeta 2: Consultoría LOPCYMAT -->
             <div class="servicio-tarjeta">
                 <div class="servicio-encabezado">
-                    <svg class="servicio-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path d="M64 112C64 85.5 85.5 64 112 64L160 64C177.7 64 192 78.3 192 96C192 113.7 177.7 128 160 128L128 128L128 256C128 309 171 352 224 352C277 352 320 309 320 256L320 128L288 128C270.3 128 256 113.7 256 96C256 78.3 270.3 64 288 64L336 64C362.5 64 384 85.5 384 112L384 256C384 333.4 329 398 256 412.8L256 432C256 493.9 306.1 544 368 544C429.9 544 480 493.9 480 432L480 346.5C442.7 333.3 416 297.8 416 256C416 203 459 160 512 160C565 160 608 203 608 256C608 297.8 581.3 333.4 544 346.5L544 432C544 529.2 465.2 608 368 608C270.8 608 192 529.2 192 432L192 412.8C119 398 64 333.4 64 256L64 112zM512 288C529.7 288 544 273.7 544 256C544 238.3 529.7 224 512 224C494.3 224 480 238.3 480 256C480 273.7 494.3 288 512 288z"/>
-                    </svg>
-                    <h3>Consultoría LOPCYMAT</h3>
+                    <i class="fas fa-shield-alt info-icono"></i>
+                    <h3>Programas de Seguridad y Salud</h3>
                 </div>
-                <p>Diseño de programas de seguridad y salud en el trabajo, asesoría técnica para empresas y preparación ante inspecciones del INPSASEL.</p>
+                <p>Diseño e implementación de Programas de Seguridad y Salud en el Trabajo (PSST) con alcance a fiscalizaciones.</p>
+                <a href="#contacto" class="btn-servicio">Solicitar propuesta</a>
             </div>
 
-            <!-- Tarjeta 3: Vigilancia Epidemiológica -->
             <div class="servicio-tarjeta">
                 <div class="servicio-encabezado">
-                    <svg class="servicio-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path d="M256 144C256 117.5 277.5 96 304 96L336 96C362.5 96 384 117.5 384 144L384 496C384 522.5 362.5 544 336 544L304 544C277.5 544 256 522.5 256 496L256 144zM64 336C64 309.5 85.5 288 112 288L144 288C170.5 288 192 309.5 192 336L192 496C192 522.5 170.5 544 144 544L112 544C85.5 544 64 522.5 64 496L64 336zM496 160L528 160C554.5 160 576 181.5 576 208L576 496C576 522.5 554.5 544 528 544L496 544C469.5 544 448 522.5 448 496L448 208C448 181.5 469.5 160 496 160z"/>
-                    </svg>
-                    <h3>Vigilancia Epidemiológica</h3>
+                    <i class="fas fa-clipboard-check info-icono"></i>
+                    <h3>Auditorías e Inspecciones INPSASEL</h3>
                 </div>
-                <p>Asesoría e implementación de sistemas de vigilancia epidemiológica en el área laboral.</p>
+                <p>Diagnóstico de cumplimiento normativo previa inspección oficial para mitigar riesgos legales e indemnizaciones.</p>
+                <a href="#contacto" class="btn-servicio">Solicitar propuesta</a>
             </div>
-
-            <!-- Tarjeta 4: Capacitación y Docencia -->
-            <div class="servicio-tarjeta">
-                <div class="servicio-encabezado">
-                    <svg class="servicio-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path d="M192 144C222.9 144 248 118.9 248 88C248 57.1 222.9 32 192 32C161.1 32 136 57.1 136 88C136 118.9 161.1 144 192 144zM176 576L176 416C176 407.2 183.2 400 192 400C200.8 400 208 407.2 208 416L208 576C208 593.7 222.3 608 240 608C257.7 608 272 593.7 272 576L272 240L400 240C417.7 240 432 225.7 432 208C432 190.3 417.7 176 400 176L384 176L384 128L576 128L576 320L384 320L384 288L320 288L320 336C320 362.5 341.5 384 368 384L592 384C618.5 384 640 362.5 640 336L640 112C640 85.5 618.5 64 592 64L368 64C341.5 64 320 85.5 320 112L320 176L197.3 176C151.7 176 108.8 197.6 81.7 234.2L14.3 324.9C3.8 339.1 6.7 359.1 20.9 369.7C35.1 380.3 55.1 377.3 65.7 363.1L112 300.7L112 576C112 593.7 126.3 608 144 608C161.7 608 176 593.7 176 576z"/>
-                    </svg>
-                    <h3>Capacitación y Docencia</h3>
-                </div>
-                <p>Diseño y aplicación de cursos, talleres y programas formativos a medida para empresas y profesionales de la salud.</p>
-            </div>
-
-            <!-- Tarjeta 5: Evaluación de Puestos de Trabajo -->
-            <div class="servicio-tarjeta">
-                <div class="servicio-encabezado">
-                    <svg class="servicio-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/>
-                    </svg>
-                    <h3>Evaluación de puestos de trabajo</h3>
-                </div>
-                <p>Evaluación de Condiciones y Medio Ambiente de Trabajo, también conocidas como evaluaciones de riesgos laborales.</p>
-            </div>
-
-            <!-- Tarjeta 6: Atención de Emergencias -->
-            <div class="servicio-tarjeta">
-                <div class="servicio-encabezado">
-                    <svg class="servicio-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path d="M272 88C272 74.7 282.7 64 296 64L344 64C357.3 64 368 74.7 368 88L368 144L424 144C437.3 144 448 154.7 448 168L448 216C448 229.3 437.3 240 424 240L368 240L368 296C368 309.3 357.3 320 344 320L296 320C282.7 320 272 309.3 272 296L272 240L216 240C202.7 240 192 229.3 192 216L192 168C192 154.7 202.7 144 216 144L272 144L272 88zM98.7 448L141.2 405.5C165.2 381.5 197.8 368 231.7 368L384 368C401.7 368 416 382.3 416 400C416 417.7 401.7 432 384 432L312 432C298.7 432 288 442.7 288 456C288 469.3 298.7 480 312 480L424.6 480L544.3 391.8C562.1 378.7 587.1 382.5 600.2 400.3C613.3 418.1 609.5 443.1 591.7 456.2L465.1 549.5C441.7 566.7 413.5 576 384.4 576L64 576C46.3 576 32 561.7 32 544L32 480C32 462.3 46.3 448 64 448L98.7 448z"/>
-                    </svg>
-                    <h3>Atención de Emergencias</h3>
-                </div>
-                <p>Atención inmediata y coordinación en situaciones de emergencia. Convenio con Clínicas para atencion de emergencias.</p>
-            </div>
-
         </div>
     </section>
 
-    <<section id="contacto">
-    <h2>Contacto</h2>
-   
-    <!-- Nueva tarjeta de información de contacto -->
-    <div class="contacto-info-grid">
-        <div class="info-tarjeta">
-            <i class="fas fa-map-marker-alt info-icono"></i>
-            <h3>Dirección</h3>
-            <p>Lechería, Estado Anzoátegui, Venezuela.</p>
-            <a href="https://maps.app.goo.gl/Uh2n8Ejh2Drsbd4i9" target="_blank" rel="noopener noreferrer" class="maps-link">
-                <i class="fas fa-directions"></i> Ver en Google Maps
-            </a>
-        </div>
-
-        <div class="info-tarjeta">
-            <i class="fas fa-phone-alt info-icono"></i>
-            <h3>Teléfono</h3>
-            <p><a href="tel:+584148373572">+58 (414) 837-3572</a></p>
-        </div>
-
-        <div class="info-tarjeta">
-            <i class="fas fa-envelope info-icono"></i>
-            <h3>Correo Electrónico</h3>
-            <p><a href="mailto:otsmedicina@gmail.com">otsmedicina@gmail.com</a></p>
-        </div>
-
-        <div class="info-tarjeta">
-            <i class="fab fa-instagram info-icono"></i>
-            <h3>Instagram</h3>
-            <p><a href="https://instagram.com/otsmedicina" target="_blank" rel="noopener noreferrer">@otsmedicina</a></p>
-        </div>
-    </div>
- <p>¿Deseas coordinar una asesoría empresarial o agendar una cita médica? Ponte en contacto con nosotros o déjanos tus datos.</p>
-    
-   
-    <!-- Formulario de contacto -->
-    <div class="contacto-contenedor">
-        <form action="#" method="POST" class="formulario-contacto">
-            <div class="campo">
-                <label for="nombre">Nombre Completo / Empresa:</label>
-                <input type="text" id="nombre" name="nombre" required>
+    <!-- 2.D BLOQUE DE DESCARGA DE RECURSOS ÚTILES (LEAD MAGNET) -->
+    <section id="recursos" class="seccion-recursos">
+        <h2>Recursos para Gestión SHA y RRHH</h2>
+        <div class="recursos-contenedor">
+            <div class="recurso-tarjeta">
+                <i class="fas fa-file-pdf recurso-icono"></i>
+                <div class="recurso-texto">
+                    <h3>Guía Rápida de Requisitos para Inspecciones</h3>
+                    <p>Lista de cotejo indispensables ante visitas de verificación de salud y seguridad ocupacional.</p>
+                </div>
+                <a href="#" class="btn-descarga" onclick="alert('Descargando guía...'); return false;">
+                    <i class="fas fa-download"></i> Descargar PDF
+                </a>
             </div>
-            
-            <div class="campo">
-                <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
-            </div>
+        </div>
+    </section>
 
-            <div class="campo">
-                <label for="telefono">Teléfono de Contacto:</label>
-                <input type="tel" id="telefono" name="telefono">
+    <!-- 2.E PREGUNTAS FRECUENTES (FAQ ACORDEÓN) -->
+    <section id="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-contenedor">
+            <details class="faq-item">
+                <summary>¿Cada cuánto tiempo deben realizarse los exámenes periódicos vacacionales?</summary>
+                <p>Deben realizarse anualmente de forma obligatoria previo al disfrute de las vacaciones del trabajador y al reincorporarse a sus labores, según lo estipulado en las normas técnicas vigentes.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿Qué documentos exige el INPSASEL durante una fiscalización de rutina?</summary>
+                <p>Entre los documentos principales destacan: El Programa de Seguridad y Salud en el Trabajo (PSST) actualizado, registro del Comité de Seguridad y Salud Laboral, informes de morbilidad y los expedientes médicos ocupacionales.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿Ofrecen atención médica e in situ en la sede de la empresa?</summary>
+                <p>Sí, contamos con jornadas médicas in situ diseñadas para no interrumpir la dinámica operativa de la organización, trasladando nuestro equipo especializado hasta sus instalaciones.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- 1 & 2.B SECCIÓN DE CONTACTO Y COTIZACIÓN RÁPIDA (Etiqueta <section> corregida) -->
+    <section id="contacto">
+        <h2>Contacto y Cotización Directa</h2>
+        <p class="seccion-subtitulo">Déjanos tus datos y requerimientos para enviarte una propuesta técnica a la medida.</p>
+
+        <div class="contacto-info-grid">
+            <div class="info-tarjeta">
+                <i class="fas fa-map-marker-alt info-icono"></i>
+                <h3>Dirección</h3>
+                <p>Lechería, Estado Anzoátegui, Venezuela.</p>
             </div>
 
-            <div class="campo">
-                <label for="mensaje">¿En qué puedo ayudarte?:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <div class="info-tarjeta">
+                <i class="fas fa-phone-alt info-icono"></i>
+                <h3>Teléfono</h3>
+                <p><a href="tel:+584148373572">+58 (414) 837-3572</a></p>
             </div>
 
-            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
-        </form>
-    </div>
-</section>
+            <div class="info-tarjeta">
+                <i class="fas fa-envelope info-icono"></i>
+                <h3>Correo Electrónico</h3>
+                <p><a href="mailto:contacto@tsmedicinaocupacional.com">contacto@tsmedicinaocupacional.com</a></p>
+            </div>
+
+            <div class="info-tarjeta">
+                <i class="fab fa-instagram info-icono"></i>
+                <h3>Instagram</h3>
+                <p><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">@tsmedicinaocupacional</a></p>
+            </div>
+        </div>
+
+        <!-- Formulario con Campos B2B -->
+        <div class="contacto-contenedor">
+            <form action="#" method="POST" class="formulario-contacto">
+                <div class="campo">
+                    <label for="nombre">Nombre Completo / Empresa:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="correo">Correo Electrónico Corporativo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono de Contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <!-- Campo desplegable B2B -->
+                <div class="campo">
+                    <label for="tipo-solicitud">Tipo de Solicitud:</label>
+                    <select id="tipo-solicitud" name="tipo-solicitud" required>
+                        <option value="" disabled selected>Seleccione una opción...</option>
+                        <option value="evaluaciones">Evaluaciones Médicas Ocupacionales</option>
+                        <option value="psst">Diseño de Programa de Seguridad y Salud (PSST)</option>
+                        <option value="inspeccion">Inspección / Auditoría INPSASEL</option>
+                        <option value="capacitacion">Capacitación / Talleres SHA</option>
+                        <option value="otro">Otro Requerimiento</option>
+                    </select>
+                </div>
+
+                <!-- N° aproximado de trabajadores -->
+                <div class="campo">
+                    <label for="trabajadores">Número Aproximado de Trabajadores:</label>
+                    <input type="number" id="trabajadores" name="trabajadores" min="1" placeholder="Ej: 25">
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Detalles Adicionales:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indique requerimientos específicos o fechas estimadas..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Solicitar Cotización</button>
+            </form>
+        </div>
+
+        <!-- MAPA INCRUSTADO EN VIVO (Google Maps Iframe) -->
+        <div class="mapa-contenedor">
+            <h3>Nuestra Ubicación</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.83777598822!2d-64.6938928!3d10.1938889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2d731173df011f%3A0xb35e396e9526e95a!2sLecher%C3%ADa%2C%20Anzo%C3%A1tegui!5e0!3m2!1ses!2sve!4v1700000000000!5m2!1ses!2sve" 
+                width="100%" 
+                height="350" 
+                style="border:0; border-radius: 12px; margin-top: 20px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 T&S Medicina Ocupacional. Todos los derechos reservados.</p>
+        <p>&copy; T&S Medicina Ocupacional C.A. Todos los derechos reservados.</p>
     </footer>
 
 </body>
