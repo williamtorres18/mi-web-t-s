@@ -2,10 +2,10 @@
    1. CONFIGURACIÓN GENERAL Y VARIABLES (Colores de la marca)
    ========================================================================== */
 :root {
-    --color-principal: #0a2540;   /* Azul Marino Corporativo (Confianza y Seriedad) */
-    --color-secundario: #f4f6f9;  /* Gris Clínico Claro (Fondo Limpio) */
-    --color-acento: #00b4d8;      /* Azul Turquesa / Verde Menta (Botones y Enlaces) */
-    --color-texto: #333333;       /* Gris Oscuro para lectura cómoda */
+    --color-principal: #0a2540;   /* Azul Marino Corporativo */
+    --color-secundario: #f4f6f9;  /* Gris Clínico Claro */
+    --color-acento: #00b4d8;      /* Azul Turquesa */
+    --color-texto: #333333;       /* Gris Oscuro */
     --color-blanco: #ffffff;
 }
 
@@ -25,10 +25,9 @@ body {
 /* ==========================================================================
    2. CABECERA Y NAVEGACIÓN
    ========================================================================== */
-/* --- ENCABEZADO CLARO (Header) --- */
 header {
     background-color: #ffffff; /* Fondo blanco */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Sombra elegante para dar relieve */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Sombra elegante */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -38,14 +37,27 @@ header {
     padding: 12px 5%;
 }
 
-/* Texto del Logo */
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
 .logo-texto {
-    color: #0f2b48; /* Azul oscuro elegante */
+    color: #0f2b48;
     font-weight: 700;
     font-size: 1.1rem;
 }
 
-/* Enlaces del Menú de Navegación */
 nav ul {
     display: flex;
     list-style: none;
@@ -55,29 +67,26 @@ nav ul {
 }
 
 nav ul li a {
-    color: #0f2b48; /* Texto azul oscuro */
+    color: #0f2b48;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
     transition: color 0.2s ease-in-out;
 }
 
-/* Efecto al pasar el cursor sobre las pestañas */
 nav ul li a:hover {
-    color: #1d68a7; /* Azul más claro de acento */
-}
+    color: #1d68a7;
 }
 
 /* ==========================================================================
    3. SECCIÓN DE INICIO (HERO)
    ========================================================================== */
-./* --- SECCIÓN PRINCIPAL (Hero Section) --- */
 .hero-section {
-    /* Mantiene la imagen de fondo con un filtro oscuro transparente arriba para legibilidad del texto */
-    background: linear-gradient(rgba(15, 43, 72, 0.75), rgba(15, 43, 72, 0.75)), 
+    /* Cambia 'imagen-hero.jpg' por el nombre de tu archivo de imagen real */
+    background: linear-gradient(rgba(15, 43, 72, 0.8), rgba(15, 43, 72, 0.8)), 
                 url('imagen-hero.jpg') no-repeat center center/cover;
     
-    color: #ffffff; /* Texto en blanco */
+    color: #ffffff;
     text-align: center;
     padding: 100px 20px;
     min-height: 450px;
@@ -97,15 +106,15 @@ nav ul li a:hover {
     margin-bottom: 25px;
     color: #f0f4f8;
 }
-}
 
 .btn-acento {
     background-color: var(--color-acento);
-    color: var(--color-blanco);
+    color: var(--color-blanco) !important;
     padding: 0.8rem 2rem;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    display: inline-block;
     transition: background 0.3s;
 }
 
@@ -114,7 +123,7 @@ nav ul li a:hover {
 }
 
 /* ==========================================================================
-   4. ESTILOS DE SECCIONES (Sobre Mí, Servicios, Contacto)
+   4. ESTILOS DE SECCIONES (Sobre Nosotros, Servicios, Contacto)
    ========================================================================== */
 section {
     padding: 5rem 10%;
@@ -137,28 +146,11 @@ section h2::after {
     margin: 0.5rem auto 0 auto;
 }
 
-/* Sobre Mí */
+/* Sobre Nosotros */
 .perfil-contenedor {
     display: flex;
     gap: 4rem;
     align-items: center;
-}
-.servicio-encabezado {
-    display: flex;
-    flex-direction: column; /* Apila el icono sobre el título */
-    align-items: center;    /* Centra horizontalmente */
-    text-align: center;     /* Centra el texto del título */
-    margin-bottom: 1rem;     /* Espacio entre el encabezado y el texto del servicio */
-}
-.servicio-icono {
-    width: 55px !important;      /* Tamaño ideal y elegante */
-    height: 55px !important;
-    fill: var(--color-acento);   /* Esto pinta el SVG con el azul turquesa de tu marca */
-    margin-bottom: 0.5rem;
-    display: block;
-}
-    margin-left: auto;           /* Centra la imagen horizontalmente */
-    margin-right: auto;          /* Centra la imagen horizontalmente */
 }
 
 .perfil-texto h3 {
@@ -178,19 +170,7 @@ section h2::after {
     text-align: justify;
 }
 
-.foto-placeholder {
-    width: 300px;
-    height: 350px;
-    background-color: var(--color-secundario);
-    border: 2px dashed #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #888;
-    border-radius: 8px;
-}
-
-/* Cuadrícula de Servicios */
+/* Servicios */
 #servicios {
     background-color: var(--color-secundario);
 }
@@ -213,9 +193,92 @@ section h2::after {
     transform: translateY(-5px);
 }
 
+.servicio-encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.servicio-icono {
+    width: 55px !important;
+    height: 55px !important;
+    fill: var(--color-acento);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
 .servicio-tarjeta h3 {
     color: var(--color-principal);
     margin-bottom: 1rem;
+}
+
+/* Sección e Información de Contacto */
+.contacto-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto 40px auto;
+    padding: 0 20px;
+}
+
+.info-tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px 16px;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-tarjeta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.info-icono {
+    font-size: 28px;
+    color: #1a365d;
+    margin-bottom: 12px;
+}
+
+.info-tarjeta h3 {
+    font-size: 1.1rem;
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+.info-tarjeta p, 
+.info-tarjeta a {
+    font-size: 0.95rem;
+    color: #4a5568;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.info-tarjeta a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
+
+.maps-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    background-color: #ebf8ff;
+    color: #2b6cb0 !important;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem !important;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease;
+}
+
+.maps-link:hover {
+    background-color: #bee3f8;
 }
 
 /* Formulario de Contacto */
@@ -277,91 +340,4 @@ footer {
     nav ul li { margin: 0 1rem; }
     .perfil-contenedor { flex-direction: column; text-align: center; }
     section { padding: 3rem 5%; }
-}
-.servicio-tarjeta img {
-    width: 60px !important;
-    height: 60px !important;
-    object-fit: contain;
-}
-
-.logo-link {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-    color: inherit;
-}
-
-.logo-img {
-    height: 45px; /* Altura ideal para la barra de navegación */
-    width: auto;
-    object-fit: contain;
-    display: block;
-}
-/* Estilos para la sección de Información de Contacto */
-.contacto-info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 30px auto 40px auto;
-    padding: 0 20px;
-}
-
-.info-tarjeta {
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 24px 16px;
-    text-align: center;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.info-tarjeta:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-.info-icono {
-    font-size: 28px;
-    color: #1a365d; /* Color acorde al tono del encabezado/tema */
-    margin-bottom: 12px;
-}
-
-.info-tarjeta h3 {
-    font-size: 1.1rem;
-    color: #2d3748;
-    margin-bottom: 8px;
-}
-
-.info-tarjeta p, 
-.info-tarjeta a {
-    font-size: 0.95rem;
-    color: #4a5568;
-    text-decoration: none;
-    word-break: break-word;
-}
-
-.info-tarjeta a:hover {
-    color: #2b6cb0;
-    text-decoration: underline;
-}
-
-/* Enlace/Botón destacado para Google Maps */
-.maps-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 6px 14px;
-    background-color: #ebf8ff;
-    color: #2b6cb0 !important;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.85rem !important;
-    text-decoration: none !important;
-    transition: background-color 0.2s ease;
-}
-
-.maps-link:hover {
-    background-color: #bee3f8;
 }
