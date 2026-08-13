@@ -112,36 +112,67 @@
         </div>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¿Deseas coordinar una asesoría empresarial o agendar una cita médica? Déjame tus datos.</p>
-        
-        <div class="contacto-contenedor">
-            <form action="#" method="POST" class="formulario-contacto">
-                <div class="campo">
-                    <label for="nombre">Nombre Completo / Empresa:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                
-                <div class="campo">
-                    <label for="correo">Correo Electrónico:</label>
-                    <input type="email" id="correo" name="correo" required>
-                </div>
-
-                <div class="campo">
-                    <label for="telefono">Teléfono de Contacto:</label>
-                    <input type="tel" id="telefono" name="telefono">
-                </div>
-
-                <div class="campo">
-                    <label for="mensaje">¿En qué puedo ayudarte?:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                </div>
-
-                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
-            </form>
+    <<section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Deseas coordinar una asesoría empresarial o agendar una cita médica? Ponte en contacto con nosotros o déjanos tus datos.</p>
+    
+    <!-- Nueva tarjeta de información de contacto -->
+    <div class="contacto-info-grid">
+        <div class="info-tarjeta">
+            <i class="fas fa-map-marker-alt info-icono"></i>
+            <h3>Dirección</h3>
+            <p>Lechería, Estado Anzoátegui, Venezuela.</p>
+            <a href="https://maps.app.goo.gl/Uh2n8Ejh2Drsbd4i9" target="_blank" rel="noopener noreferrer" class="maps-link">
+                <i class="fas fa-directions"></i> Ver en Google Maps
+            </a>
         </div>
-    </section>
+
+        <div class="info-tarjeta">
+            <i class="fas fa-phone-alt info-icono"></i>
+            <h3>Teléfono</h3>
+            <p><a href="tel:+584148373572">+58 (414) 837-3572</a></p>
+        </div>
+
+        <div class="info-tarjeta">
+            <i class="fas fa-envelope info-icono"></i>
+            <h3>Correo Electrónico</h3>
+            <p><a href="mailto:otsmedicina@gmail.com">otsmedicina@gmail.com</a></p>
+        </div>
+
+        <div class="info-tarjeta">
+            <i class="fab fa-instagram info-icono"></i>
+            <h3>Instagram</h3>
+            <p><a href="https://instagram.com/otsmedicina" target="_blank" rel="noopener noreferrer">@otsmedicina</a></p>
+        </div>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div class="contacto-contenedor">
+        <form action="#" method="POST" class="formulario-contacto">
+            <div class="campo">
+                <label for="nombre">Nombre Completo / Empresa:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="campo">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono de Contacto:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">¿En qué puedo ayudarte?:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
 
     <footer>
         <p>&copy; 2026 T&S Medicina Ocupacional. Todos los derechos reservados.</p>
