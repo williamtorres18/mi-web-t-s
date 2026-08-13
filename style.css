@@ -275,3 +275,18 @@ footer {
     height: 60px !important;
     object-fit: contain;
 }
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-img {
+    height: 45px; /* Altura ideal para la barra de navegación */
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
