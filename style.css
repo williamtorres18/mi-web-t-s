@@ -545,3 +545,32 @@ footer {
     font-family: inherit;
     background-color: #ffffff;
 }
+/* MEJORA DE CONTRASTE Y DESTACADO DE TARJETAS SOBRIAS */
+.pilar-tarjeta, 
+.servicio-tarjeta,
+.info-tarjeta {
+    background-color: #f8fafc; /* Fondo gris-azulado muy suave pero diferenciado */
+    border: 1px solid #cbd5e1; /* Borde sutil y limpio */
+    border-top: 4px solid #0088cc; /* Franja superior azul corporativa para dar personalidad */
+    border-radius: 10px;
+    padding: 28px 22px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra marcada para despegar del fondo */
+    transition: all 0.3s ease;
+}
+
+/* EFECTO HOVER ELEGANTE AL PASAR EL CURSOR */
+.pilar-tarjeta:hover, 
+.servicio-tarjeta:hover,
+.info-tarjeta:hover {
+    background-color: #ffffff; /* Pasa a blanco puro destacando el contenido */
+    transform: translateY(-6px); /* Eleva suavemente la tarjeta */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14); /* Aumenta la sombra */
+}
+
+/* ICONOS EN DENTRO DE LAS TARJETAS */
+.pilar-icono,
+.info-icono {
+    color: #0088cc;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
